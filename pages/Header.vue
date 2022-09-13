@@ -2,7 +2,9 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+          <img src="~/assets/images/svg-logo-primary.svg" width="145" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -86,6 +88,10 @@ export default {
   .nav-item {
     .nav-link {
       padding: 1.25rem 1.15rem;
+      color: rgb(0, 0, 0);
+      &:hover {
+        color: rgba(0, 0, 0, 0.5);
+      }
     }
     .vertical-spacer {
       margin: 1.25rem 1rem;
@@ -98,6 +104,9 @@ export default {
       background-color: $warnaJanda;
       border-color: $warnaJanda;
       border-radius: 5rem;
+      &:hover {
+        background-color: rgba(111, 47, 171, 0.9);
+      }
     }
   }
 }
