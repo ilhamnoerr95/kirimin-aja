@@ -12,10 +12,21 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script:
+    [
+      {
+      src:'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js'
+    }
+  ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '@/assets/css/_global.scss',
+    '@/assets/css/_variable.scss',
+    '@/assets/css/bootstrap.min.css',
+
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -35,12 +46,24 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'https://632028dfe3bdd81d8ef3b725.mockapi.io',
+    publicRuntimeConfig: {
+      axios: {
+        browserBaseURL: 'https://632028dfe3bdd81d8ef3b725.mockapi.io'
+      }
+    },
+
+    privateRuntimeConfig: {
+      axios: {
+        baseURL: 'https://632028dfe3bdd81d8ef3b725.mockapi.io'
+      }
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
