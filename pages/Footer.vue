@@ -152,9 +152,7 @@
               <span class="h6 mb-4 d-block">KiriminAja</span>
               <ul class="footer-links mt-2">
                 <li class="fw-medium">
-                  <a href="https://kiriminaja.com/about" class=""
-                    >Tentang Kami</a
-                  >
+                  <NuxtLink to="/about" class="">Tentang Kami</NuxtLink>
                 </li>
                 <li class="fw-medium">
                   <a href="https://kiriminaja.com/syarat-ketentuan"

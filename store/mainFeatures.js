@@ -57,6 +57,21 @@ const state = ()=> ({
     , {id:6,
       text:"Meminimalisir rasio retur."
     }
+  ],
+  ourMission:[
+    {id:1,
+      text:"Meningkatkan penjualan produk UMKM secara online."
+    },
+    {id:2,
+      text:"Memberikan inovasi-inovasi terbaru dan terbaik.."
+    },
+    {id:3,
+      text:"Memberikan pelayanan yang maksimal dan optimal untuk pelanggan."
+    },
+    {id:4,
+      text:"Mengenalkan KiriminAja seluas-luasnya ke seluruh Indonesia."
+    }
+
   ]
 })
 
@@ -69,6 +84,9 @@ const getters = {
   },
   trackData: (state)=>{
     return state.trackingData
+  },
+  ourMission: (state)=>{
+    return state.ourMission
   }
 
 }

@@ -2,9 +2,9 @@
   <!-- <header> -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <NuxtLink class="navbar-brand" to="/">
         <img src="~/assets/images/svg-logo-primary.svg" width="145" />
-      </a>
+      </NuxtLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -22,7 +22,9 @@
       >
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            <NuxtLink class="nav-link" aria-current="page" to="/"
+              >Beranda</NuxtLink
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Blog</a>
@@ -86,7 +88,7 @@ export default {
 
 .navbar {
   // position: fixed;
-  // z-index: 99999;
+  z-index: 99999;
   .nav-item {
     .nav-link {
       padding: 1.25rem 1.15rem;

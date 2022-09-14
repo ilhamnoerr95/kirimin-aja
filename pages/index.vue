@@ -23,7 +23,7 @@
     <div class="py-1 py-lg-5"></div>
     <MainFeatures />
     <ExploreBarang />
-    <IklanDownload />
+    <!-- <IklanDownload /> -->
   </div>
 </template>
 
@@ -33,7 +33,7 @@ import EkspedisiList from '@/components/home/EkspedisiList.vue'
 import CekBarang from '@/components/home/CekBarang.vue'
 import MainFeatures from '@/components/home/MainFeatures.vue'
 import ExploreBarang from '@/components/home/ExploreBarang.vue'
-import IklanDownload from '@/components/home/IklanDaftar.vue'
+// import IklanDownload from '@/components/home/IklanDaftar.vue'
 
 export default {
   name: 'IndexPage',
@@ -43,7 +43,7 @@ export default {
     CekBarang,
     MainFeatures,
     ExploreBarang,
-    IklanDownload,
+    // IklanDownload,
   },
   layout: 'main',
 }

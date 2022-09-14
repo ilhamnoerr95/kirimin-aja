@@ -47,33 +47,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '/assets/css/_global.scss';
+
 .explore {
-  .list-check {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      background: #fff;
-      padding: 0.75rem 0.75rem 0.75rem 2.75rem;
-      border-radius: 0.5rem;
-      border: 2px solid rgba(0, 0, 0, 0.125);
-      position: relative;
-      margin-bottom: 12px;
-      font-weight: 500;
-      // &::before {
-      //   content: '';
-      //   display: block;
-      //   width: 20px px;
-      //   height: 20px;
-      //   background: url(https://www.shipbob.com/wp-content/themes/ShipBob/assets/svg/check.svg)
-      //     no-repeat center;
-      //   background-size: 20px;
-      //   border-radius: 50%;
-      //   position: absolute;
-      //   top: calc(50% - 10px);
-      //   left: 0.75rem;
-      // }
-    }
-  }
+  @include list-check(#fff);
 }
 </style>
