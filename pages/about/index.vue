@@ -1,46 +1,29 @@
 <template>
-  <div>
-    <h1 class="coba">{{ counter }}</h1>
-    <button @click="increment">add</button>
+  <div class="wrapper">
+    <AboutMain />
+    <AboutBottom />
   </div>
 </template>
 
 <script>
-// import { useStore } from '@nuxtjs/composition-api'
+import AboutMain from '@/components/about/AboutMain.vue'
+import AboutBottom from '@/components/about/AboutBottom.vue'
 
 export default {
   name: 'AboutPage',
+  components: { AboutMain, AboutBottom },
   layout: 'main',
-
-  data() {
-    return {
-      count: 1,
-    }
-  },
-  computed: {
-    counter() {
-      return this.$store.state.dummy.counter
-    },
-  },
-  mounted() {
-    this.$store.dispatch('dummy/getDataUser')
-  },
-  methods: {
-    increment() {
-      this.$store.commit('dummy/increment')
-    },
-
-    // increments() {
-    //   this.count++
-    // },
-  },
 }
 </script>
 
 <style lang="scss">
 @import '/assets/css/_global.scss';
+@import '/assets/css/_variable.scss';
 
-.coba {
-  @include varBebas(red);
+.wrapper {
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
 }
 </style>
