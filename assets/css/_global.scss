@@ -6,9 +6,7 @@
   color: $param;
   background-color: yellowgreen;
 }
-.text-primary-light{
-  color: #6f2fab
-}
+
 @mixin list-check($bgParam,$borderParam){
 .list-check{
     list-style: none;
@@ -39,6 +37,14 @@
     }
   }
 }
+.text-primary-light{
+  color: #6f2fab
+}
+
+.full-radius{
+  border-radius:5rem;
+}
+
 
 * {
   box-sizing: border-box;
@@ -56,6 +62,11 @@ body {
   button {
   font-family: "DM sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
+}
+
+.lead{
+  font-size: 1.2rem;
+  font-weight: 300;
 }
   .white-theme{
   // margin: 0 auto;

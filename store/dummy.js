@@ -5,6 +5,7 @@ export const state = () => ({
   counter: 0,
   user:[],
   ekspedisi:[],
+  frontBanner:[],
   bodyTheme: true
 })
 
@@ -17,6 +18,9 @@ export const getters = {
   },
   infoBodyTheme(state){
     return state.bodyTheme
+  },
+  getDataBanner(state){
+    return state.frontBanner
   }
 }
 
@@ -30,6 +34,8 @@ export const mutations = {
     state.user = payload
   }, dataEkspedisi(state,payload){
     state.ekspedisi = payload
+  }, dataFrontBanner(state,payload){
+    state.frontBanner = payload
   }
 }
 
@@ -69,5 +75,22 @@ export const actions = {
     .catch((err) => {
       console.error(err)
     })
+},getDataBanner({commit}){
+  const config = {
+    method: "GET",
+    url:'https://632028dfe3bdd81d8ef3b725.mockapi.io/front-banner',
+    headers: {
+      accept: "application/json",
+    },
+  }
+  axios(config)
+  .then((response) => {
+    commit("dataFrontBanner", response.data)
+    console.log(response.data)
+    // console.log($config)
+  })
+  .catch((err) => {
+    console.error(err)
+  })
 },
 }
