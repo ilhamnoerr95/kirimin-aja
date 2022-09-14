@@ -6,8 +6,10 @@
   color: $param;
   background-color: yellowgreen;
 }
-
-@mixin list-check($bgParam){
+.text-primary-light{
+  color: #6f2fab
+}
+@mixin list-check($bgParam,$borderParam){
 .list-check{
     list-style: none;
     padding: 0;
@@ -16,7 +18,8 @@
       background: $bgParam;
       padding: 0.75rem 0.75rem 0.75rem 2.75rem;
       border-radius: 0.5rem;
-      border: 2px solid rgba(0, 0, 0, 0.125);
+      border: $borderParam;
+      // 2px solid rgba(0, 0, 0, 0.125);
       position: relative;
       margin-bottom: 12px;
       font-weight: 500;

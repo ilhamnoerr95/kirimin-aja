@@ -50,6 +50,6 @@ export default {
 @import '/assets/css/_global.scss';
 
 .explore {
-  @include list-check(#fff);
+  @include list-check(#fff, 2px solid rgba(0, 0, 0, 0.125));
 }
 </style>

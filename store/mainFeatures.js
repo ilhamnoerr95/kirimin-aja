@@ -72,6 +72,21 @@ const state = ()=> ({
       text:"Mengenalkan KiriminAja seluas-luasnya ke seluruh Indonesia."
     }
 
+  ],
+  aboutKirimin:[
+    {id:1,
+      text:"Meningkatkan penjualan produk UMKM secara online."
+    },
+    {id:2,
+      text:"Memberikan inovasi-inovasi terbaru dan terbaik.."
+    },
+    {id:3,
+      text:"Memberikan pelayanan yang maksimal dan optimal untuk pelanggan."
+    },
+    {id:4,
+      text:"Mengenalkan KiriminAja seluas-luasnya ke seluruh Indonesia."
+    }
+
   ]
 })
 

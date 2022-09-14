@@ -8,8 +8,8 @@ export const state = () => ({
 })
 
 export const getters = {
-  getCounter(state) {
-    return state.counter
+  getUserData(state) {
+    return state.user
   },
   infoBodyTheme(state){
     return state.bodyTheme
@@ -22,6 +22,8 @@ export const mutations = {
   },
   changeTheme(state,payload) {
     state.bodyTheme = payload
+  }, dataUsers(state,payload){
+    state.user = payload
   }
 }
 
@@ -36,6 +38,7 @@ export const actions = {
       }
       axios(config)
       .then((response) => {
+        commit("dataUsers", response.data)
         console.log(response.data)
         // console.log($config)
       })
