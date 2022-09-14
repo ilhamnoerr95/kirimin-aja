@@ -1,7 +1,7 @@
 <template>
   <section class="ekspedisi-list">
     <div class="container px-mobile-fix">
-      <div class="mt-4">
+      <div class="mt-5">
         <div
           id="carouselExampleInterval"
           class="carousel slide"

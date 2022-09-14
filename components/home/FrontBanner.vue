@@ -6,6 +6,7 @@
         id="carouselExampleCaptions"
         class="carousel slide mb-5"
         data-bs-ride="carousel"
+        data-bs-touch="true"
       >
         <!-- CAROUSEL INNER -->
         <div class="carousel-inner">
@@ -98,6 +99,9 @@ export default {
 .front-banner {
   .carousel {
     .carousel-inner {
+      .carousel-item {
+        transition: transform 0.2s ease-in-out;
+      }
       .btn-primary {
         background-color: #6f2fab !important;
       }
