@@ -1,7 +1,7 @@
 <template>
   <section class="ekspedisi-list">
     <div class="container px-mobile-fix">
-      <div class="mt-4">
+      <div class="mt-5">
         <div
           id="carouselExampleInterval"
           class="carousel slide"
@@ -12,13 +12,13 @@
               <div
                 v-for="(data, index) in dataEkspedisi"
                 :key="index"
-                class="carousel-item active"
+                :class="index === 0 ? 'carousel-item active' : 'carousel-item'"
                 data-bs-interval="2000"
               >
                 <div class="p-4 mb-3 mb-lg-0 col-lg text-center">
                   <img
                     :src="data.image"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="..."
                     height="40px"
                     style="max-height: 40px; width: auto"

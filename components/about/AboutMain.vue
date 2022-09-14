@@ -34,6 +34,11 @@
           <div class="me-lg-5">
             <ul class="list-check">
               <li v-for="data in dataMission" :key="data.id">
+                <span class="mr-2 position-relative">
+                  <img
+                    class=""
+                    src="https://kiriminaja.com/assets/home-2/shape.svg"
+                /></span>
                 {{ data.text }}
               </li>
             </ul>

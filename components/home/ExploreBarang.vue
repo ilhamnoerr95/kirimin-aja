@@ -24,8 +24,15 @@
           />
         </div>
         <div class="col-lg">
-          <ul class="list-check mt-3 mb-4 me-lg-5">
-            <li v-for="data in dataExplore" :key="data.id">{{ data.text }}</li>
+          <ul class="list-check mt-3 mb-4 me-lg-2">
+            <li v-for="data in dataExplore" :key="data.id">
+              <span class="mr-2 position-relative">
+                <img
+                  class=""
+                  src="https://kiriminaja.com/assets/home-2/shape.svg"
+              /></span>
+              {{ data.text }}
+            </li>
           </ul>
         </div>
       </div>
